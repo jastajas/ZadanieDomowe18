@@ -3,19 +3,19 @@ import java.util.Random;
 
 public class MultiArray {
 
-    int[][] numbersArray;
+    private int[][] numbersArray;
 
     public MultiArray(int N, int M) {
         Random rnd = new Random();
         numbersArray = new int[N][M];
-
-        int y = 0;
+        numbersArray = randomize();
+        /*int y = 0;
         do {
             for (int i = 0; i < numbersArray[y].length; i++) {
                 numbersArray[y][i] = rnd.nextInt(20);
             }
             y++;
-        } while (y < numbersArray.length);
+        } while (y < numbersArray.length);*/
     }
 
     public int[][] randomize(){
